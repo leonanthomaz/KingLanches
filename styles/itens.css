@@ -1,0 +1,257 @@
+/*-- CSS DE LANCHES e BEBIDAS --- */
+.itens-container {
+  display:table;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 10px auto;
+  height: auto;
+  max-width: 350px;
+  max-height: 100px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 50px;
+}
+
+ .item-info {
+  height: auto;
+  display: table;
+  flex-direction: column;
+
+  background-color:#ffffff;
+  
+  padding-bottom: 6px;
+  border-radius: 10px;
+  
+  margin-top: 30px;
+
+  
+}
+
+
+
+
+.item-info.info-bebidas .txt-bebidas {
+  height: auto;
+}
+
+.item-info img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item-img{
+  width: auto;
+  height: auto;
+}
+
+
+
+.itens-container .item-info .item-txt .item-sub-txt{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  margin-top: 5px;
+  margin: 1px;
+
+}
+
+#bebidas .item-info {
+  height: auto;
+
+  
+  
+}
+#bebidas .itens-container .item-info .item-txt {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  height: auto;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.item-numeros-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 0 20px;
+  height: auto;
+}
+/* ADICIONAIS */
+.itens-adicionais {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  height: auto;
+
+
+}
+.itens-adicionais strong {
+  padding: 10px 0 10px 15px;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+
+
+}
+
+strong{
+  margin: 10px;
+  font-size: 25px;
+}
+
+
+
+
+
+.itens-adicionais ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+
+}
+.itens-adicionais ul li {
+  margin-left: 15px;
+  height: auto;
+
+
+}
+
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 2px solid #ddd;
+  display: inline-flex;
+  margin: 1px;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline:none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  content: '\f077';
+  transform: translate(-50%, -50%) rotate(180deg);;
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.number-input input[type=number] {
+  font-family: sans-serif;
+  max-width: 5rem;
+  padding: .5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 2rem;
+  height: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.marque_a_caixa{
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+  color: transparent;
+  border-top: solid black;
+  width: 300px;
+}
+
+
+
+
+
+.item_valor{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 5px;
+  
+}
+
+
+
+.item_quant{
+  align-items: center;
+
+}
+
+
+.botoesadd{
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pulse {
+  animation: pulse 0.7s infinite;
+  margin: 0 auto;
+  display: table;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(200%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(200%);
+  }
+}
+
+
+
+
+
+
